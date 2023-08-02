@@ -3,7 +3,7 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
+  --primary-color: #13131a;
   --secondary-color: #313bac;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
@@ -18,3 +18,11 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
+/* #151030  tertially for cards if so
+aaa6c3 secondary //no
+#13131a
+#050816 //primary
+*/
+
+/* // #1c1c24 */

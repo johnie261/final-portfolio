@@ -7,7 +7,7 @@ import './Home.scss'
 const Home = () => {
 
   return (
-    <div className="home" id="home">
+    <div className="home">
       <video className="vid" src={videoBg} autoPlay loop muted/>
       <div className="intro">
         <p className="text">Hello, I'm <span className="intro-name">John Njoroge</span>.</p>

@@ -1,0 +1,133 @@
+.nav-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.2rem;
+    // position: fixed;
+    // z-index: 2;
+
+    .logo-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 100px;
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+
+    .nav-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin: 0 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        div {
+          width: 5px;
+          height: 5px;
+          background: transparent;
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+
+        a {
+          color: #dfd9ff;
+          text-decoration: none;
+          flex-direction: column;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          div {
+            background: #915eff;
+          }
+        }
+      }
+    }
+
+    .nav-menu {
+      display: none;
+    }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    .nav-container {
+      display: none;
+    }
+
+    .nav-menu {
+      display: block;
+
+      .toggle-btn {
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
+
+      .toggle-menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background-color: #151030;
+        z-index: 10;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        transform: translateY(-100vh);
+        transition: all 700ms;
+
+        &.open {
+          transform: translateY(0); 
+        }
+
+        .nav-toggle {
+          margin-bottom: 1rem;
+          list-style: none;
+
+          li {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            &:hover {
+              letter-spacing: 0.1;
+            }
+
+            &.bg-active {
+            background-color: #3a3a43;
+            }
+
+            a {
+              color: #dfd9ff;
+              text-decoration: none;
+              font-size: 1rem;
+
+              &:hover{
+                letter-spacing: .1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    
+}
