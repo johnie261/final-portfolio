@@ -5,8 +5,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.2rem;
-    // position: fixed;
-    // z-index: 2;
+    background-color: #050810;
+    border-bottom: 2.5px solid #915eff;
+    position: fixed;
+    z-index: 2;
 
     .logo-container {
       display: flex;
@@ -55,7 +57,8 @@
           }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           div {
             background: #915eff;
           }
@@ -80,19 +83,26 @@
       .toggle-btn {
         font-size: 1.6rem;
         cursor: pointer;
+        color: #dfd9ff;
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
       }
 
       .toggle-menu {
         position: absolute;
         top: 60px;
         right: 0;
-        left: 0;
-        background-color: #151030;
+        //left: 0;
+        border-radius: .9rem;
+        background-color: #100d25;
+        //background: linear-gradient(180deg, #100d25 0%, #100d25 100%);
+        width: 140px;
         z-index: 10;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         transform: translateY(-100vh);
-        transition: all 700ms;
+        transition: all 1300ms;
 
         &.open {
           transform: translateY(0); 
@@ -105,10 +115,12 @@
           li {
             display: flex;
             justify-content: center;
+            align-self: flex-start;
             padding: 1rem;
 
             &:hover {
               letter-spacing: 0.1;
+              background-color: #050816;
             }
 
             &.bg-active {
@@ -118,7 +130,7 @@
             a {
               color: #dfd9ff;
               text-decoration: none;
-              font-size: 1rem;
+              font-size: 1.2rem;
 
               &:hover{
                 letter-spacing: .1rem;

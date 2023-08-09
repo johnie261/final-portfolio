@@ -4,10 +4,15 @@ import './Navbar.scss'
 import logo from '../../assets/jlogos2.png'
 import { navLinks } from '../../constants'
 
+import menu from '../../assets/menu.svg'
+import close from '../../assets/close.svg'
+
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const [isActive, setIsActive] = useState("")
 
   return (
     <nav className="nav-content">
@@ -18,16 +23,22 @@ const Navbar = () => {
         {navLinks.map((link) => (
           <li className="nav-link" key={link.name}>
             <div />
-            <a href={`#${link.name}`}>{link.title}</a>
+            {link.name === "home"  ?  
+              (<Link to="/">{link.title}</Link>) : 
+              ( <a href={`#${link.name}`}>{link.name}</a>
+            )}
           </li>
         ))}
       </ul>
 
       <div className="nav-menu">
-        <FaBars 
-          className="toggle-btn" 
+
+        <img
+         src={toggle ? close : menu}
+          alt="menu"
+          className="toggle-btn"
           onClick={() => setToggle((prev) => !prev)}
-        />
+        />   
 
         {toggle && (
           <div className={`toggle-menu ${toggle ? 'open' : ''}`}>
@@ -37,10 +48,13 @@ const Navbar = () => {
                 className="nav-link"
                 key={link.name}
                 onClick= {() => {
-                    setToggle(false)}
+                  setToggle(false)}
                   }
               >
-                <a href={`#${link.name}`}>{link.title}</a>
+                {link.name === "home"  ?  
+                  (<Link to="/">{link.title}</Link>) : 
+                  ( <a href={`#${link.name}`}>{link.name}</a>
+                )}
               </li>
               ))}
             </ul>

@@ -1,23 +1,43 @@
 
+
 export const navLinks = [
     {
-      id: "home",
+      name: "home",
       title: "Home",
     },
     {
-      id: "about",
+      name: "about",
       title: "About",
     },
     {
-      id: "work",
+      name: "work",
       title: "Work",
     },
     {
-      id: "skills",
+      name: "skills",
       title: "Skills",
     },
     {
-      id: "contact",
+      name: "contact",
       title: "Contact",
     },
   ];
+
+  // const services = [
+  //   {
+  //     title: "Frontend Developer",
+  //     icon: web,
+  //   },
+  //   {
+  //     title: "React Developer",
+  //     icon: mobile,
+  //   },
+  //   {
+  //     title: "Backend Developer",
+  //     icon: backend,
+  //   },
+  //   {
+  //     title: "UX",
+  //     icon: creator,
+  //   },
+  // ];
