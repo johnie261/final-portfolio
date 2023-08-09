@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+.app-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.app__footer-form {
+    width: 50%;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+  
+    div {
+      width: 100%;
+  
+      margin: 0.75rem 0;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: var(--primary-color);
+  
+      transition: all 0.3s ease-in-out;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.95rem;
+        border: none;
+        border-radius: 7px;
+        background-color: #151030;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        color: #dfd9ff;
+        outline: none;
+      }
+  
+      textarea {
+        height: 170px;
+      }
+  
+      &:hover {
+        box-shadow: 0 0 25px var(--primary-color);
+      }
+    }
+  
+    button {
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      background-color: #915eff;
+  
+      font-weight: 500;
+      color: #dfd9ff;
+      outline: none;
+      margin: 2rem 0 0 0;
+      font-family: var(--font-base);
+  
+      transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #dfd9ff;
+        color:#151030;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }

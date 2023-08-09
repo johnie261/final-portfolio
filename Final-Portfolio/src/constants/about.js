@@ -7,6 +7,26 @@ import todos from '../assets/todos.png'
 import math from '../assets/math.png'
 import event from '../assets/event.png'
 
+import css from '../assets/tech/css.png'
+import ethCurrency from '../assets/tech/ethCurrency.png'
+import ethers from '../assets/tech/ethers2.com.png'
+import git from '../assets/tech/git.png'
+import hardhat from '../assets/tech/hardhat2.png'
+import html from '../assets/tech/html.png'
+import javascript from '../assets/tech/javascript.png'
+import jest from '../assets/tech/jest.png'
+import metamask from '../assets/tech/metamask-icon.png'
+import moralis from '../assets/tech/moralisLogoBrand2.png'
+import nextjs from '../assets/tech/nextjs-icon.png'
+import postgresql from '../assets/tech/postgresql.png'
+import react from '../assets/tech/reactjs.png'
+import redux from '../assets/tech/redux.png'
+import rails from '../assets/tech/ruby-on-rails-icon.png'
+import ruby from '../assets/tech/ruby.png'
+import scss from '../assets/tech/sass.png'
+import solidity from '../assets/tech/solidity-icon.png'
+import tailwind from '../assets/tech/tailwind.png'
+import thirdweb from '../assets/tech/thirdweb.png'
 
 export const abouts = [
     {title: 'Front-End Development', description: 'm a skilled software developer with experience in JavaScript', imgUrl: front},
@@ -14,6 +34,89 @@ export const abouts = [
     {title: 'Blockchain Development', description: 'good web dev', imgUrl: block},
     {title: 'UI/UX', description: 'good web dev', imgUrl: ux},
   ]
+
+export const technologies = [
+    {
+      name: "HTML5",
+      icon: html,
+    },
+    {
+      name: "CSS3",
+      icon: css,
+    },
+    {
+      name: "Scss",
+      icon: scss
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: react,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      name: "Next js",
+      icon: nextjs,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "jest",
+      icon: jest,
+    },
+    {
+      name: "Postgres",
+      icon: postgresql,
+    },
+    {
+      name: "Ruby",
+      icon: ruby,
+    },
+    {
+      name: "Rails",
+      icon: rails,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "solidity",
+      icon: solidity,
+    },
+    {
+      name: "Ethers js",
+      icon: ethers,
+    },
+    {
+      name: "Ethereum",
+      icon: ethCurrency,
+    },
+    {
+      name: "Thirdweb",
+      icon: thirdweb,
+    },
+    {
+      name: "Moralis",
+      icon: moralis,
+    },
+    {
+      name: "Hardhat",
+      icon: hardhat,
+    },
+    {
+      name: "Metamask",
+      icon: metamask,
+    },
+  ];
 
 export const projects = [
     {
