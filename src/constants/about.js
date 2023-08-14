@@ -243,8 +243,8 @@ export const projects = [
         },
       ],
       image: gampling,
-      live_demo: "https://booky-store.netlify.app/",
-      source_code_link: "https://github.com/johnie261/Book-store/",
+      live_demo: "https://g-reservations.netlify.app/",
+      source_code_link: "https://github.com/johnie261/book-a-reservation-frontend",
     }, 
     {
       name: "Expenses Tracker",
