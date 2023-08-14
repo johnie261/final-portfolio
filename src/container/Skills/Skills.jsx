@@ -8,11 +8,11 @@ const Skills = () => {
   return (
     <div className='content-skill' id="skills">
       <h3 className="header-text">MY SKILLS.</h3>
+
       <div className='app-contain'>
-    
-      <div className="app__skills-container">
-        <motion.div className="app__skills-list">
-        {technologies.map((skill) => (
+        <div className="app__skills-container">
+          <motion.div className="app__skills-list">
+          {technologies.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -28,9 +28,10 @@ const Skills = () => {
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
-      </div>
+      
     </div>
   )
 }

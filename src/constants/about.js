@@ -10,6 +10,8 @@ import gampling from '../assets/gampling.png'
 import raffle from '../assets/raffle.png'
 import campaigns from '../assets/campaigns.png'
 import uniswap from '../assets/uniswap.png'
+import expense from '../assets/expense.png'
+import booky from '../assets/booky.png'
 
 import css from '../assets/tech/css.png'
 import ethCurrency from '../assets/tech/ethCurrency.png'
@@ -189,8 +191,9 @@ export const projects = [
           name: "css",
           color: "pink-text-gradient",
         },
+        
       ],
-      image: gampling,
+      image: booky,
       live_demo: "https://booky-store.netlify.app/",
       source_code_link: "https://github.com/johnie261/Book-store/",
     },
@@ -233,11 +236,37 @@ export const projects = [
           name: "redux",
           color: "pink-text-gradient",
         },
+        {
+          name: "Postgres",
+          color: "blue-text-gradient",
+        },
       ],
       image: gampling,
       live_demo: "https://booky-store.netlify.app/",
       source_code_link: "https://github.com/johnie261/Book-store/",
     }, 
+    {
+      name: "Expenses Tracker",
+      description:
+        "EXpense tracker is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+      tags: [
+        {
+          name: "ruby on rails",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Postgres",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: expense,
+      live_demo: "https://johnie261.github.io/Concert-Web/",
+      source_code_link: "https://github.com/johnie261/expenses_tracker",
+    },
     {
       name: "Concert Web",
       description:
