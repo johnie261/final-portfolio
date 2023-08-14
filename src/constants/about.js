@@ -155,7 +155,7 @@ export const projects = [
     {
       name: "Math Magician",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations, read a random quote.",
       tags: [
         {
           name: "react",
@@ -198,7 +198,7 @@ export const projects = [
       source_code_link: "https://github.com/johnie261/Book-store/",
     },
     {
-      name: "Book Store",
+      name: "To-do List",
       description:
         "This application lets us add to-dos, edit, and delete items. It also persists to-dos in the browser's local storage for a subsequent visit.",
       tags: [
@@ -220,9 +220,9 @@ export const projects = [
       source_code_link: "https://github.com/johnie261/Todo-React",
     },
     {
-      name: "Glamping web",
+      name: "Book a reservation",
       description:
-        "A book store website displays a list of books, add new book and remove selected book.",
+        "This is a full-stack web app that let users see list of glampings, see the details of each glamping, make a reservation, add and delete a glamping you login as 'john'",
       tags: [
         {
           name: "ruby on rails",
