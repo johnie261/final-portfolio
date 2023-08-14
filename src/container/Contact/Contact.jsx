@@ -1,10 +1,12 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef} from 'react';
+import emailjs from '@emailjs/browser'
 import './Contact.scss'
 import { AppWrap } from '../../wrapper'
 
 const Contact = () => {
 
   const formRef = useRef()
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -18,8 +20,41 @@ const Contact = () => {
     setForm({...form, [name]:value});
   }
 
-  const handleSubmit = () => {
-    // e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .send(
+        "service_fpwwjze",
+        "template_vd7koi7",
+        {
+          from_name: form.name,
+          to_name: "John",
+          from_email: form.email,
+          to_email: "njorogejohn261@gmail.com",
+          message: form.message
+        },
+        "38phpdQDG2wSK9K_G"
+      )
+      .then (
+        () => {
+          setLoading(false)
+          alert("Thank you. I will get back to you as soon as possible.");
+        
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   }
 
   return (
@@ -31,7 +66,7 @@ const Contact = () => {
 
     <form 
       className="app__footer-form app__flex"
-      onClick={handleSubmit}
+      // onClick={handleSubmit}
       ref={formRef}
     >
       <div className="app__flex">
@@ -65,6 +100,7 @@ const Contact = () => {
       </div>
       <button 
         type="submit" 
+        onClick={handleSubmit}
         className="p-text" 
       >
         {!loading ? 'Send Message' : 'Sending...'}
