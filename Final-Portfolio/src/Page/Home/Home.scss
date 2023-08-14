@@ -55,6 +55,16 @@
   }
 }
 
+@media (max-width: 993px) {
+  .home {
+    .intro {
+      .text {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .home {
     .intro {
@@ -64,6 +74,7 @@
       .text {
         font-size: 1.7rem;
         font-weight: 500;
+        padding-left: 1.5rem;
       }
       .intro-btn {
         font-size: 1.1rem;
