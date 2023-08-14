@@ -12,6 +12,7 @@ import campaigns from '../assets/campaigns.png'
 import uniswap from '../assets/uniswap.png'
 import expense from '../assets/expense.png'
 import booky from '../assets/booky.png'
+import ricky from '../assets/ricky.png'
 
 import css from '../assets/tech/css.png'
 import ethCurrency from '../assets/tech/ethCurrency.png'
@@ -268,26 +269,26 @@ export const projects = [
       source_code_link: "https://github.com/johnie261/expenses_tracker",
     },
     {
-      name: "Concert Web",
+      name: "Rick and Morty Characters",
       description:
-        "A crowdfunding web3 app where a person can create their own campaign, view available campaigns and donate to campaigns.",
+        " project provides a complete database of characters from the show, accessed through the Rick and morty API. Users can interact with the characters by liking or commenting, creating an engaging and interactive experience.",
       tags: [
         {
-          name: "HTML",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "SCSS",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "JavaScript",
+          name: "scss",
           color: "pink-text-gradient",
         },
       ],
-      image: event,
-      live_demo: "https://johnie261.github.io/Concert-Web/",
-      source_code_link: "https://github.com/johnie261/Book-store/",
+      image: ricky,
+      live_demo: "http://nicolasolaya.me/Rick-and-Morty-Characters/",
+      source_code_link: "https://github.com/NicolasAndrehh/Rick-and-Morty-Characters",
     },
     {
       name: "uniswap clone",
