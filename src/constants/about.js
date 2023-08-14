@@ -6,6 +6,10 @@ import shopfinity from '../assets/shopfinity.png'
 import todos from '../assets/todos.png'
 import math from '../assets/math.png'
 import event from '../assets/event.png'
+import gampling from '../assets/gampling.png'
+import raffle from '../assets/raffle.png'
+import campaigns from '../assets/campaigns.png'
+import uniswap from '../assets/uniswap.png'
 
 import css from '../assets/tech/css.png'
 import ethCurrency from '../assets/tech/ethCurrency.png'
@@ -27,6 +31,7 @@ import scss from '../assets/tech/sass.png'
 import solidity from '../assets/tech/solidity-icon.png'
 import tailwind from '../assets/tech/tailwind.png'
 import thirdweb from '../assets/tech/thirdweb.png'
+import typescript from '../assets/tech/typescript.png'
 
 export const abouts = [
     {title: 'Front-End Development', description: 'm a skilled software developer with experience in JavaScript', imgUrl: front},
@@ -51,6 +56,10 @@ export const technologies = [
     {
       name: "JavaScript",
       icon: javascript,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
     },
     {
       name: "React JS",
@@ -163,28 +172,28 @@ export const projects = [
       live_demo: "https://mathmagicianrct.netlify.app/",
       source_code_link: "https://github.com/johnie261/Math-magician",
     },
-    // {
-    //   name: "Book Store",
-    //   description:
-    //     "A book store website displays a list of books, add new book and remove selected book.",
-    //   tags: [
-    //     {
-    //       name: "react",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "redux",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: bookstore,
-    //   live_demo: "https://booky-store.netlify.app/",
-    //   source_code_link: "https://github.com/johnie261/Book-store/",
-    // },
+    {
+      name: "Book Store",
+      description:
+        "A book store website displays a list of books, add new book and remove selected book.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: gampling,
+      live_demo: "https://booky-store.netlify.app/",
+      source_code_link: "https://github.com/johnie261/Book-store/",
+    },
     {
       name: "Book Store",
       description:
@@ -207,32 +216,32 @@ export const projects = [
       live_demo: "https://reactjs-todo-pp.netlify.app/",
       source_code_link: "https://github.com/johnie261/Todo-React",
     },
-  /*  {
-      name: "Book Store",
+    {
+      name: "Glamping web",
       description:
         "A book store website displays a list of books, add new book and remove selected book.",
       tags: [
         {
-          name: "react",
+          name: "ruby on rails",
           color: "blue-text-gradient",
         },
         {
-          name: "redux",
+          name: "react",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "redux",
           color: "pink-text-gradient",
         },
       ],
-      image: bookstore,
+      image: gampling,
       live_demo: "https://booky-store.netlify.app/",
       source_code_link: "https://github.com/johnie261/Book-store/",
-    }, */
+    }, 
     {
       name: "Concert Web",
       description:
-        "An online website which displays information and details about a musical concert.",
+        "A crowdfunding web3 app where a person can create their own campaign, view available campaigns and donate to campaigns.",
       tags: [
         {
           name: "HTML",
@@ -250,5 +259,120 @@ export const projects = [
       image: event,
       live_demo: "https://johnie261.github.io/Concert-Web/",
       source_code_link: "https://github.com/johnie261/Book-store/",
+    },
+    {
+      name: "uniswap clone",
+      description:
+        "A simple uniswap clone where a person can transfer cryptocurrencies between wallets, also a person is able to see the latest transactions done.",
+      tags: [
+        {
+          name: "web3",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "solidity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "next js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "context api",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "hardhat",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "ethers js",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: uniswap,
+      live_demo: "https://uniswap-blockchain-one.vercel.app/",
+      source_code_link: "https://github.com/johnie261/uniswap",
+    },
+    {
+      name: "Fundraiser web3 app",
+      description:
+        "A crowdfunding web3 app where a person can create their own campaign, view available campaigns and donate crowdfunding campaigns directly through the blockchain.",
+      tags: [
+        {
+          name: "web3",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "context api",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "solidity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "thirdweb",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "metamask",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: campaigns,
+      live_demo: "https://crypt-fundraisers.netlify.app/",
+      source_code_link: "https://github.com/johnie261/fundraiser",
+    },
+    {
+      name: "Lottery web3 app",
+      description:
+        "a web3 lottery application where the owner of the contract can put an NFT up to be raffled. Users can then purchase raffle entries and the owner can then select a random winner.",
+      tags: [
+        {
+          name: "web3",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "solidity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "next js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "thirdweb",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "chakra ui",
+          color: "green-text-gradient",
+        },
+
+        {
+          name: "typescript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "metamask",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: raffle,
+      live_demo: "https://raffleapp.vercel.app/",
+      source_code_link: "https://github.com/johnie261/Raffles",
     },
   ];

@@ -22,6 +22,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (!form.name || !form.email || !form.message) {
+      alert('Please fill out all fields');
+      return;
+    }
     setLoading(true)
 
     emailjs
@@ -96,6 +100,7 @@ const Contact = () => {
           value={form.message}
           name="message"
           onChange={handleChange}
+          required
         />
       </div>
       <button 

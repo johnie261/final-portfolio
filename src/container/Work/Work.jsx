@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { projects } from '../../constants/about';
 
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeFilter, setActiveFilter] = useState('all')
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -23,10 +23,10 @@ const Work = () => {
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
-      if (item === 'All') {
+      if (item === 'all') {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => work.tags.some(tag => tag.name === item)));
       }
       console.log(filterWork)
     }, 500);
@@ -49,7 +49,7 @@ const Work = () => {
       </div>
 
       <div className="app__work-filter">
-        {['react', 'Ruby on Rails', 'next js', 'web3', 'All'].map((item, index) => (
+        {['react', 'ruby on rails', 'next js', 'web3', 'all'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
