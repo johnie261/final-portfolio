@@ -265,7 +265,7 @@ export const projects = [
         },
       ],
       image: expense,
-      live_demo: "https://johnie261.github.io/Concert-Web/",
+      live_demo: "https://expense-mwm0.onrender.com/",
       source_code_link: "https://github.com/johnie261/expenses_tracker",
     },
     {
