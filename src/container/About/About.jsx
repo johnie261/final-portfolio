@@ -6,34 +6,6 @@ import { Tilt } from 'react-tilt';
 import { abouts } from '../../constants/about';
 import { AppWrap } from '../../wrapper';
 
-// const ServiceCard = ({ index, title, icon }) => (
-//   <Tilt className="tilt-container">
-//     <motion.div
-//       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-//       className="motion-tilt"
-//     >
-//       <div
-//         options={{
-//           max: 45,
-//           scale: 1,
-//           speed: 450,
-//         }}
-//         className="motion-option"
-//       >
-//         <img
-//           src={icon}
-//           alt='web-development'
-//           className="motion-icon"
-//         />
-
-//         <h3 className="motion-title">
-//           {title}
-//         </h3>
-//       </div>
-//     </motion.div>
-//   </Tilt>
-// );
-
 const About = () => {
   return (
     <div className="content" id="about"> 
@@ -41,7 +13,6 @@ const About = () => {
         variants={textVariant()}
         className="text"
       >
-          {/* <p className="sub-text">Introduction</p> */}
           <h2 className="header-text">Overview.</h2>
       </motion.div>
 
@@ -51,7 +22,7 @@ const About = () => {
       > 
        <div className='txtx'>
           I possess strong skills as a software developer,
-           proficient in <span>JavaScript</span> and <span>Ruby</span>, and I have specialized expertise in <span>React</span>, 
+           proficient in <span>JavaScript</span>, <span>Ruby</span> and <span>Solidity</span>, and I have specialized expertise in <span>React</span>, 
            <span>Redux</span>, and <span>Ruby on Rails</span> frameworks. I'm highly adaptable and a quick learner, 
            having successfully executed real-world projects, including an e-commerce site. 
            Additionally, I have actively participated in various group projects, demonstrating my ability to collaborate effectively. 
@@ -74,16 +45,9 @@ const About = () => {
               className="bold-text"
               style={{ marginTop: 20 }}
             >{about.title}</h2>
-            {/* <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p> */}
           </motion.div>
         ))}
       </div>
-
-      {/* <div className="about-cards">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div> */}
     </div>
   )
 }
