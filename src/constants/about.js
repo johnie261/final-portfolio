@@ -13,6 +13,7 @@ import uniswap from '../assets/uniswap.png'
 import expense from '../assets/expense.png'
 import booky from '../assets/booky.png'
 import ricky from '../assets/ricky.png'
+import vote from '../assets/vote1.png'
 
 import css from '../assets/tech/css.png'
 import ethCurrency from '../assets/tech/ethCurrency.png'
@@ -154,26 +155,38 @@ export const projects = [
       source_code_link: "https://github.com/johnie261/shopFinity",
     },
     {
-      name: "Math Magician",
+      name: "DeVoting",
       description:
-        "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations, read a random quote.",
+        "This is a simple Dapp that allows a person to organize voting, where the organizer is the only one who can add new candidates and voters. And also the voter is able to vote the candidate of their choice.",
       tags: [
         {
-          name: "react",
+          name: "next js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "solidity",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "web3",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "metamask",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ethers js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "hardhat",
           color: "pink-text-gradient",
         },
       ],
-      image: math,
-      live_demo: "https://mathmagicianrct.netlify.app/",
-      source_code_link: "https://github.com/johnie261/Math-magician",
+      image: vote,
+      live_demo: "https://web3-voting-web.vercel.app/",
+      source_code_link: "https://github.com/johnie261/web3-voting-web",
     },
     {
       name: "Book Store",
