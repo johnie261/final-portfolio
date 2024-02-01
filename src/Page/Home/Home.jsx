@@ -12,7 +12,7 @@ const Home = () => {
       <video className="vid" src={videoBg} autoPlay loop muted/>
       <div className="intro">
         <p className="text">Hello, I'm <span className="intro-name">John Njoroge</span>.</p>
-        <p className="text">I'm a full-stack/Blockchain developer.</p>
+        <p className="text">I'm a full-stack developer.</p>
         
         <Link 
           to="/view"

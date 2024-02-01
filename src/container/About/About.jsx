@@ -22,11 +22,12 @@ const About = () => {
       > 
        <div className='txtx'>
           I possess strong skills as a software developer,
-           proficient in <span>JavaScript</span>, <span>Ruby</span> and <span>Solidity</span>, and I have specialized expertise in <span>React</span>, 
-           <span>Redux</span>, and <span>Ruby on Rails</span> frameworks. I'm highly adaptable and a quick learner, 
+           proficient in <span>JavaScript</span>, <span>Ruby</span>, <span>Solidity</span> and currently learning <span>C#</span>. I have specialized expertise in <span>React</span>, <span>React Native</span>,
+           <span>Redux</span>, <span>Node js</span>, and <span>Ruby on Rails</span> frameworks. I'm highly adaptable and a quick learner, 
            having successfully executed real-world projects, including an e-commerce site. 
            Additionally, I have actively participated in various group projects, demonstrating my ability to collaborate effectively. 
            I embrace new technologies with enthusiasm and look forward to continuously evolving and staying ahead in this dynamic field.
+           Currently am working on a system management project with the following technologies, <span>React</span>, <span>React Native</span>, <span>Node js</span>, <span>Express js</span> and <span>PostgreSQL</span>,
         </div>
 
       </motion.p>
